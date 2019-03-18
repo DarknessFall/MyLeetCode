@@ -84,6 +84,8 @@ struct ListNode *getIntersectionNodeNEW(struct ListNode *headA, struct ListNode 
 	}
 	
 	if (hasCycle == false) {
+		tailA->next = NULL;
+
 		return NULL;
 	}
 	
