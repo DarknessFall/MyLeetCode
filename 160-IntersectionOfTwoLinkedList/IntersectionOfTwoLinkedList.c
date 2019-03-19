@@ -115,4 +115,6 @@ int main(int argc, char *argv[]) {
 	} else {
 		printf("%d", result->val);
 	}
+
+	return 0;
 }
