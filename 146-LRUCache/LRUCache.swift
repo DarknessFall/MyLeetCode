@@ -59,8 +59,8 @@ class LRUCache {
 
 	private func addToHead(_ node: LRUNode) {
 		node.next = head
-		head?.prev = newNode
-		head = newNode
+		head?.prev = node
+		head = node
 	}
 
 	private func remove(_ node: LRUNode) {
